@@ -10,6 +10,7 @@ public class TabellinaInput {
 
         System.out.print("Inserisci un numero e scoprire la tabellina:  ");
         numero = scan.nextInt();
+        scan.close();
 
         for (int i = 0; i<=10; i++) {
 

@@ -5,7 +5,10 @@ public class ParolaPalindroma {
     public static void main(String[] args) {
         
         System.out.print("Stringa: ");
-        String parola = new Scanner(System.in).nextLine();
+        String parola;
+        Scanner scan = new Scanner(System.in);
+        parola = scan.nextLine();
+        scan.close();
  
         // la utilizzo per il controllo con l'originale
         String inversa = "";
