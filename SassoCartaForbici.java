@@ -13,7 +13,7 @@ public class SassoCartaForbici {
         //ATTRIBUTI
         String tuaMossa;
         boolean decisione = true;
-        int pareggio = 0;
+        //int pareggio = 0;
         String sceltaPc;
 
         System.out.println("Scrivi 1 per scegliere di giocare in modalità single-player:  ");
@@ -46,7 +46,7 @@ public class SassoCartaForbici {
 
             if(tuaMossa.equals(sceltaPc)) {
 
-                pareggio =+ 1;
+                //pareggio =+ 1;
                 System.out.println("\nAbbiamo pareggiato...");
 
             } else if ((tuaMossa.equals("sasso") && sceltaPc.equals("foribci" )) || (tuaMossa.equals("forbici") && sceltaPc.equals("carta")) || (tuaMossa.equals("carta") && sceltaPc.equals("sasso"))) {
@@ -62,6 +62,8 @@ public class SassoCartaForbici {
         }
 
        }
+
+       scan.close();
     }
 
     public static String randomStringFromArr() {
